@@ -22,8 +22,8 @@ public class timeshow : MonoBehaviour
     void Update()
     {
         timesecond+= Time.deltaTime; ;
-        TimeText.text = "" + timecount;
-        ScoreText.text = "" + score;
+        TimeText.text = "TIME: " + timecount;
+        ScoreText.text = "SCORE: " + score;
         if (timesecond >= 1)
         {
             timecount -= 1;

@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class winandloss : MonoBehaviour
 {
-   
+    bool timedead;
+    int timecount;
+    bool timewin;
+    int timewincount;
     void Start()
     {
 
@@ -14,21 +17,33 @@ public class winandloss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
+        if (timedead == true)
+            timecount++;
+        if (timewin == true)
+            timewincount++;
     }
     public void OnCollisionStay(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "dead" || timeshow.instant.timecount == 0)
         {
-            SceneManager.LoadScene("SceneMainMenu");
-
+            timedead = true;
+            Audiosound.instant.selectcardd();
         }
         if (collisionInfo.collider.tag == "win")
         {
-            
-            SceneManager.LoadScene("scene2");
 
+            Audiosound.instant.playcardd();
+            timewin = true;
+        }
+        if (timewincount >= 450)
+        {
+            SceneManager.LoadScene("scene2");
+           
+        }
+        if (timecount >= 450)
+        {
+            SceneManager.LoadScene("SceneMainMenu");
+            Audiosound.instant.selectcardd();
         }
     }
 }

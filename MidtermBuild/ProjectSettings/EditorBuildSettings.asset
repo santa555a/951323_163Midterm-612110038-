@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/spalsh.unity
+    guid: 8edb7c89030be314d9d4617dace55c79
+  - enabled: 1
     path: Assets/Scenes/SceneMainMenu.unity
     guid: 9eb6b26c5a528f849b94b6ce24c7ad59
-  - enabled: 1
-    path: Assets/Scenes/scene1.unity
-    guid: f136606a953436e4cb60fbe91aba858d
   - enabled: 1
     path: Assets/Scenes/SceneOptions.unity
     guid: 93b9d3f887cffab4a889c79a4b612eba
   - enabled: 1
-    path: Assets/Scenes/select.unity
-    guid: 7ab4c861e5516b64b94e752198e38c69
-  - enabled: 1
     path: Assets/Scenes/creditscene.unity
     guid: 37d849933daf91744af94e1bd85544e9
   - enabled: 1
+    path: Assets/Scenes/select.unity
+    guid: 7ab4c861e5516b64b94e752198e38c69
+  - enabled: 1
+    path: Assets/Scenes/scene1.unity
+    guid: f136606a953436e4cb60fbe91aba858d
+  - enabled: 1
     path: Assets/Scenes/scene2.unity
     guid: 610ff4746e3f51e439ee45e10b3c3b69
-  - enabled: 1
-    path: Assets/Scenes/spalsh.unity
-    guid: 8edb7c89030be314d9d4617dace55c79
   m_configObjects: {}
