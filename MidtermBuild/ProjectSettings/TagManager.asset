@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Item
-  - Obstacle
+  - Fire
+  - green
+  - red
+  - blue
+  - grey
+  - dead
+  - win
   layers:
   - Default
   - TransparentFX
